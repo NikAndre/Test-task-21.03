@@ -1,0 +1,42 @@
+.mainFooterBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.FooterCountBlock{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80px;
+    margin-right: 90px;
+}
+
+.checkButton{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #7f837f;
+    margin: 10px;
+    border: 1px;
+    border-radius: 20px;
+    color: white;
+}
+
+.countBlock{
+    text-align: center;
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #00b100;
+    margin: 10px;
+    border: 1px;
+    border-radius: 20px;
+    color: white;
+}
+
+.deleteButton{
+    outline: none;
+    border: 0;
+    background: transparent;
+}

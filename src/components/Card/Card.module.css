@@ -1,0 +1,133 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+.cardBlock{
+    width: 400px;
+    height: 350px;
+    margin: 10px;
+    box-shadow: 2px 2px 6px -2px #34495e;
+}
+
+.cardBlock:hover{
+    box-shadow: 4px 4px 6px -2px #34495e;
+}
+
+.cardImgBlock{
+    position: relative;
+    height: 300px;
+}
+
+.upperButtonBlock{
+    position: relative;
+    padding: 10px 20px;
+    top: 0;
+}
+
+.deleteButton{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    visibility: hidden;
+}
+
+.deleteButtonActive{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    visibility: inherit;
+}
+
+.deleteIcon{
+    border-radius: 50px;
+}
+
+.visibilityButton{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    visibility: hidden;
+}
+
+.visibilityButtonActive{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    visibility: inherit;
+}
+
+.cardTextContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.cardText{
+    text-align: center;
+    margin: auto;
+}
+
+.checkboxFake{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: relative;
+
+    visibility: hidden;
+}
+
+.checkboxFakeActive{
+    display: inline-block;
+    width:20px;
+    height:20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    position: relative;
+
+    visibility: inherit;
+}
+
+.checkboxFake::before{
+    content: url("../../done_white_24dp.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    background-color: green;
+    opacity: 0;
+}
+.checkboxFakeActive::before{
+    content: url("../../done_white_24dp.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+    width: 24px;
+    height: 24px;
+    background-color: green;
+    opacity: 0;
+}
+
+.checkbox{
+    display: none;
+}
+
+.checkbox:checked + .checkboxFake::before {
+    opacity: 1;
+}
+
+.checkbox:checked + .checkboxFakeActive::before {
+    opacity: 1;
+}
+
